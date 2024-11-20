@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_popup.css">
+    <link rel="stylesheet" href="style_768.css">
+    <link rel="stylesheet" href="style_390.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <h1 class="main_heading">Property List Top Filter</h1>
+        <div class="filter">
+            <div class="filter_row_one">
+                <div class="filter_select">
+                    <select name="type" required>
+                        <option value="" disabled selected hidden>Type</option>
+                        <option value="option1">Опция 1</option>
+                        <option value="option2">Опция 2</option>
+                        <option value="option3">Опция 3</option>
+                    </select>
+                </div>
+                <div class="filter_select">
+                    <select name="category" required>
+                        <option value="" disabled selected hidden>Category</option>
+                        <option value="option1">Опция 1</option>
+                        <option value="option2">Опция 2</option>
+                        <option value="option3">Опция 3</option>
+                    </select>
+                </div>
+                <div class="filter_select">
+                    <select name="category" required>
+                        <option value="" disabled selected hidden>Temp</option>
+                        <option value="option1">Опция 1</option>
+                        <option value="option2">Опция 2</option>
+                        <option value="option3">Опция 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter_row_two_free">
+                <div class="room">
+                    <label for="bedroom">Bedroom:</label>
+                    <input type="text" id="bedroom"  name="bedroom" placeholder="">
+                    <label for="bathroom">Bathroom:</label>
+                    <input type="text" id="bathroom"  name="bathroom" placeholder="">
+                </div>
+                <div class="priceRange">
+                    <div class="priceRange_filter_row_one">
+                        <label>Price range:</label>
+                        <div class="priceRange_show">From: <span>100 $</span> To: <span>10,000 $</span></div>
+                    </div>
+                    <div class="priceRange_filter_row_two">
+                        <div class="hide_minimum_priceRange"></div>
+                        <input type="range" class="custom-range" min="0" max="10000000" step="1">
+                        <input type="range" class="custom-range" min="0" max="10000000" step="1">
+                    </div>
+                </div>  
+                <div class="input_max_min">
+                    <input type="text" id="min_area"  name="min_area" placeholder="Min area m2">
+                    <input type="text" id="max_area"  name="max_area" placeholder="Max area m2">   
+                </div>
+                <div class="filter_buttons">
+                    <!-- <button class="buttons_additional_settings"><img src="image/icon_additional_settings.svg"></button> -->
+                    <button class="buttons_search"><img src="image/icon_search.svg">Search Property</button>
+                </div>
+            </div>
+        </div>       
+        <div class="apartment_listing">
+                <div class="iframe_loader_body" style="opacity: 0; display: none; height: 0%;">
+                    <div class="iframe_loader">
+                        <span class="iframe_bar"></span>
+                        <span class="iframe_bar"></span>
+                        <span class="iframe_bar"></span>
+                    </div>
+                </div>
+              
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="house">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment_listing_item">
+                    <div class="apartment_image">
+                        <img src="image/house.png" alt="home">
+                    </div>
+                    <div class="apartament_name">Gardenia House</div>
+                    <div class="apartament_address">
+                        <img src="image/icon_address.svg">
+                        <span class="apartament_address_name">VILLLAS-Brooklyn</span>
+                    </div>
+                    <div class="apartament_about_the_house">
+                        <div class="apartament_price">265,000 $</div>
+                        <div class="apartament_characteristic">
+                            <div class="apartament_sq"><img src="image/icon_sq.svg"><span>290m</span></div>
+                            <div class="apartament_bedroom"><img src="image/icon_bedroom.svg"><span>4</span></div>
+                            <div class="apartament_bathroom"><img src="image/icon_bathroom.svg"><span>3</span></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="page">
+            <div class="page_arrow"><img src="image/left_arrow.svg"></div>
+            <span class="page_active page_num">1</span>
+            <span class="page_num">2</span>
+            <span class="page_num">3</span>
+            <div class="page_arrow"><img src="image/right_arrow.svg"></div>
+        </div>
+    </div>
+    <div class="modal" style="opacity: 0; display: none;">
+        <div class="modal_body">
+            <div class="modal_image">
+                <img src="image/house.png" alt="house">
+            </div>
+            <div class="modal_close"><img src="image/close.svg"></div>
+            <div class="modal_info">
+                <div class="modal_characteristic">
+                    <div class="modal_name">Queens Family Home</div>
+                    <div class="modal_price">Prive:<span>650,000 $</span></div>
+                    <div class="modal_line"></div>
+                    <div class="modal_highlights">
+                        <div>Condo</div>
+                        <div class="modal_vertical_line"></div>
+                        <div>Under Construction</div>
+                        <div class="modal_vertical_line"></div>
+                        <div>17 Units</div>
+                        <div class="modal_vertical_line"></div>
+                        <div>Property ID:<span>55J886</span></div>
+                        <div class="modal_vertical_line"></div>
+                        <div>1,630 - 3,270 sqft</div>
+                        <div class="modal_vertical_line"></div>
+                        <div>$3,450/sqft</div>
+                    </div>
+                </div>
+                <div class="modal_additional_information">
+                    <div class="modal_description">
+                        <h2>Description</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore fastidii at vis, eos equidem admodum disputando ea.An duis dolor appellantur mea, est id zril nobis appellantur. Ei sea duis senserit qualisque, tefacilisis appellantur pri. Id aperiri aliquam interesset mel. Contentiones vituperatoribus id est,per prima nihil scripta no. No semper forensibus adipiscing quo. Amet deleniti lobortis et eam.In oporteat pertinacia quo, cu qui antiopam intellegebat, ei alii paulo has. In alia eros ornatuspri, graeci accusata pericula an vix. His ne homero dignissim, aliquam dolores scriptorem visut. Sit ad suas adhuc interesset, nec no essent iuvaret adipiscing everti.</p>
+                    </div>
+                    <div class="modal_image_gallery">
+                        <h2>Image gallery</h2>
+                        <div class="modal_img_list">
+                            <div class="modal_img_item">
+                                <img src="image/bamboo.jpg">
+                            </div>
+                            <div class="modal_img_item">
+                                <img src="image/bamboo.jpg">
+                            </div>
+                            <div class="modal_img_item">
+                                <img src="image/bamboo.jpg">
+                            </div>
+                            <div class="modal_img_item">
+                                <img src="image/bamboo.jpg">
+                            </div>
+                            <div class="modal_img_item">
+                                <img src="image/bamboo.jpg">
+                            </div>
+                            <div class="modal_img_item">
+                                <img src="image/bamboo.jpg">
+                                <div class="modal_img_hover">See all photos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_property_features">
+                        <h2>Property features</h2>
+                        <p>Lorem ipsum dolor sit amet, homero debitis temporibus in mei, at sit voluptua antiopam hendrerit. Lorem epicuri eu per. Mediocrem torquatos deseruisse te eum commodo.</p>
+                        <div class="modal_details">
+                            <div class="modal_list">
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_architects.svg"></span>Architects</div>  
+                                    <div class="modal_content">ConocoPhillips</div>  
+                                </div>
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_builder.svg"></span>Builder</div>  
+                                    <div class="modal_content">Valero Energy</div>  
+                                </div>
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_interior_designer.svg"></span>Interior Designer</div>  
+                                    <div class="modal_content">General Motors</div>  
+                                </div>
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_marketers.svg"></span>Marketers</div>  
+                                    <div class="modal_content">Bank of America</div>  
+                                </div>
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_sales.svg"></span>Sales Company</div>  
+                                    <div class="modal_content">ConocoPhillips</div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal_amenities">
+                            <h3>Amenities</h3>
+                            <div class="modal_list">
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>Free street parking</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>Free street parking</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>24h electricity </div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>24h electricity </div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>Fire extinguisher </div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>Fire extinguisher </div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>Home security</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_check.svg"></span>Home security</div>  
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="modal_property_details">
+                            <h3>Property details</h3>
+                            <div class="modal_list">
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_sq.svg"></span>Size:</div>
+                                    <div class="modal_content">457 - 1086 sq.ft</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_sases_started_date.svg"></span>Sales started date</div>
+                                    <div class="modal_content">Feb 2, 2023</div>   
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_number_of_floors.svg"></span>Number of Floors</div>
+                                    <div class="modal_content">26</div>   
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_completation_date.svg"></span>Completion Date</div>
+                                    <div class="modal_content">Sep 2026</div>   
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_bedroom.svg"></span>Bedrooms:</div>
+                                    <div class="modal_content">4</div>   
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_bathroom.svg"></span>Bathrooms:</div>
+                                    <div class="modal_content">3</div>   
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="modal_pricing">
+                            <h3>Pricing  &  deposit structure</h3>
+                            <div class="modal_list">
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_parking_cost.svg"></span>Parking cost</div>
+                                    <div class="modal_content">$85,000</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_parking_maintenance.svg"></span>Parking Maintenance</div>
+                                    <div class="modal_content">$51</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_locker_maintenance.svg"></span>Locker Maintenance</div>
+                                    <div class="modal_content">$20</div>  
+                                </div> 
+                                <div>
+                                    <div class="modal_title"><span><img src="image/icon_maintenance_dee.svg"></span>Maintenance Dee</div>
+                                    <div class="modal_content">$0.74</div>  
+                                </div> 
+                                <div id="deposit_structure">
+                                    <div class="modal_title"><span><img src="image/icon_deposit_structure.svg"></span>Deposit Structure</div>
+                                    <div class="modal_content">$5000 on Signing</br> Balance to 5% in 30 Days</br>2.5% in 210 Days</br>2.5% in 600 Days</br>5% 90 Days Prior to Occupancy</br>5% on Occupancy</div>  
+                                </div> 
+                                <div id="deposit_amount">
+                                    <div class="modal_title"><span><img src="image/icon_deposit_amount.svg"></span>Deposit Amount</div>
+                                    <div class="modal_content">• Standard: 15%</br>• International: 30%</div>  
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="modal_location">
+                            <h2>Location</h2>
+                            <div class="modal_address">15851 78th St, Queens, NY 11414, USA Queens, New York</div>
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24197.04545265028!2d-74.01601226621299!3d40.71272814305432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDAlNDInNDYuMCJOIDc0wrAwMCcwMC4wIlc!5e0!3m2!1sen!2sus!4v1604845518490!5m2!1sen!2sus" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            class="modal_map"
+                            >
+                        </iframe>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_slider_window" style="opacity: 0; display: none;">
+        <div class="modal_close_slider_window"><img src="image/close.svg"></div>
+        <div class="modal_body_slider_window">
+            <div class="modal_slider">
+                <div class="slider_main">
+                    <div class="slider_main_item"><img src="image/house.png"></div>
+                    <div class="slider_main_item"><img src="image/bamboo.jpg"></div>
+                </div>
+                <div class="slider_thumbnails">
+                    <div class="slider_thumbnails_item"><img src="image/house.png"></div>
+                    <div class="slider_thumbnails_item"><img src="image/bamboo.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    const rangeInput = document.querySelectorAll(".custom-range");
+    let line = document.querySelector(".hide_minimum_priceRange");
+    let Show = document.querySelector(".priceRange_show");
+    let minimum = rangeInput[0].value = rangeInput[0].getAttribute("min");
+    let maximum = rangeInput[1].value = rangeInput[1].getAttribute("max");
+    let delta_procent = 100/(rangeInput[0].getAttribute("max")-rangeInput[0].getAttribute("min"));
+    rangeInput.forEach(input => {
+        input.addEventListener("input", () => {
+            let min_input = Math.min(rangeInput[0].value, rangeInput[1].value);
+            let max_input = Math.max(rangeInput[0].value, rangeInput[1].value);
+            Show.innerHTML="From: <span>"+min_input.toLocaleString('en-US')+" $</span> To: <span>"+max_input.toLocaleString('en-US')+" $</span>";
+            line.style.left = delta_procent*min_input+"%";
+            line.style.width =Math.abs(max_input-min_input)*delta_procent+"%";
+        });
+    });
+    // function getSliderCoordinates(rangeInput,margin) {
+    //     const rect = rangeInput.getBoundingClientRect();
+
+    //     // Координаты мыши
+    //     const mouseX = event.clientX;
+    //     const mouseY = event.clientY;
+
+    //     // Проверка на вхождение координат мыши в область customRange
+    //     if (
+    //         mouseX >= rect.left &&
+    //         mouseX <= rect.right &&
+    //         mouseY >= rect.top-margin &&
+    //         mouseY <= rect.bottom+margin
+    //     ) {
+    //         let width_range = Math.abs(rect.left-rect.right);
+    //         let delta_range = Math.abs(minimum-maximum);
+    //         let delta_mouse = mouseX-rect.left;
+    //         // return [true,(delta_range/width_range)*(mouseX-rect.left)];
+    //         return[true,(delta_range/width_range)*delta_mouse];
+    //     } else{
+    //         return[false];
+    //     }
+    // }
+    // document.addEventListener('click', function(event) {
+    // // Получаем элемент, по которому кликнули
+    //     let range_mouse = getSliderCoordinates(rangeInput[0],5);
+    //     if(range_mouse[0]){
+    //         let delta_0= Math.abs(rangeInput[0].value-range_mouse[1]); 
+    //         let delta_1= Math.abs(rangeInput[1].value-range_mouse[1]); 
+    //         if(delta_0<delta_1){
+    //             rangeInput[0].value=range_mouse[1];
+    //         } else{
+    //             rangeInput[1].value=range_mouse[1];
+    //         }
+    //         min_input = Math.min(rangeInput[0].value, rangeInput[1].value);
+    //         max_input = Math.max(rangeInput[0].value, rangeInput[1].value);
+    //         Show.innerHTML="From: <span>"+min_input.toLocaleString('en-US')+" $</span> To: <span>"+max_input.toLocaleString('en-US')+" $</span>";
+    //         line.style.left = delta_procent*min_input+"%";
+    //         line.style.width =Math.abs(max_input-min_input)*delta_procent+"%";
+    //     }
+    // });
+    // Проверяем, есть ли у элемента класс
+    
+</script>
+<script>
+    const background = document.querySelector('.modal');
+    const button = document.querySelector('.modal_close');
+    const Open = document.querySelectorAll('.apartment_listing_item');
+    const background_slider = document.querySelector('.modal_slider_window');
+    const button_slider = document.querySelector('.modal_close_slider_window');
+    const Open_slider = document.querySelector('.modal_img_hover');
+
+    // Open_slider.addEventListener('click', async (event) => {
+    //     // jQuery(document).ready(function($) {
+    //     //     $('.slider_main').slick('unslick');
+    //     //     $('.slider_thumbnails').slick('unslick');
+    //     // });
+    //     console.log("Open_slider");
+    // });
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    background.addEventListener('click', async (event) => {
+        if (event.target.className === "modal") {
+           background.style.opacity = "0";
+        await delay(500); // Теперь можно использовать await
+        background.style.display = "none";
+        }
+    });
+    button.addEventListener('click', async (event) => {
+        background.style.opacity = "0";
+        await delay(500); // Теперь можно использовать await
+        background.style.display = "none";
+    });
+    Open.forEach(input => {
+        input.addEventListener('click', async (event) => {
+            background.style.display = "flex";
+            await delay(100);
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+            background.style.opacity = "1";
+        });
+    });
+
+    background_slider.addEventListener('click', async (event) => {
+        if (event.target.className === "modal_slider_window") {
+           background_slider.style.opacity = "0";
+        await delay(500); // Теперь можно использовать await
+        background_slider.style.display = "none";
+        }
+    });
+    button_slider.addEventListener('click', async (event) => {
+        background_slider.style.opacity = "0";
+        await delay(500); // Теперь можно использовать await
+        background_slider.style.display = "none";
+    });
+    Open_slider.addEventListener('click', async (event) => {
+        jQuery(document).ready(function($) {
+            $('.slider_main').slick('setPosition');
+            $('.slider_thumbnails').slick('setPosition');
+        });
+        background_slider.style.display = "flex";
+        await delay(100);
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+        background_slider.style.opacity = "1";
+    });
+    // background_slider.forEach(input => {
+    //     input.addEventListener('click', async (event) => {
+    //         if (event.target.className === "modal_slider_window") {
+    //         background_slider.style.opacity = "0";
+    //         await delay(500); // Теперь можно использовать await
+    //         background_slider.style.display = "none";
+    //     }
+    //     });
+    // });
+    // button_slider.forEach(input => {
+    //     input.addEventListener('click', async (event) => {
+    //         background_slider.style.opacity = "0";
+    //         await delay(500); // Теперь можно использовать await
+    //         background_slider.style.display = "none";
+    //     });
+    // });
+    // Open_slider.forEach(input => {
+    //     input.addEventListener('click', async (event) => {
+    //         background_slider.style.display = "flex";
+    //         await delay(100);
+    //         window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //         });
+    //         background_slider.style.opacity = "1";
+    //     });
+    // });
+</script>
+<script>
+    const textInputs = document.querySelectorAll('.filter input[type="text"]');
+
+    textInputs.forEach(input => {
+        input.addEventListener('input', (event) => {
+            event.target.value = event.target.value.replace(/[^0-9.,]/g, '');
+        });
+    });
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('.slider_thumbnails').on('afterChange', function(event, slick, currentSlide) {
+            $('.slick-current').addClass('slick-center-custom');
+        });
+        $('.slider_thumbnails').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            $('.slick-slide').removeClass('slick-center-custom');
+        });
+        $(document).ready(function() {
+            let uniqueElements_main = [];
+            $('.slider_thumbnails .slick-current').addClass('slick-center-custom');
+            $('.slider_thumbnails img').each(function() {
+                    if (!uniqueElements_main.includes(this.getAttribute("src"))) {
+                        uniqueElements_main.push(this.getAttribute("src")); // Добавляем элемент, если его нет в массиве
+                    }
+                });
+            if (uniqueElements_main.length<6){
+                for (let index_repetition = 0; index_repetition < Math.ceil(6/uniqueElements_main.length); index_repetition++) {
+                    uniqueElements_main.forEach(element => {
+                        $('.slider_main').slick(
+                            "slickAdd",
+                            `<div class="slider_main_item"><img src="${element}"></div>`
+                        );
+                        $('.slider_thumbnails').slick(
+                            "slickAdd",
+                            `<div class="slider_thumbnails_item"><img src="${element}"></div>`
+                        );
+                    });
+                }
+            }
+
+        });
+
+
+        $('.slider_main').slick({
+            // infinite: ,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            asNavFor: '.slider_thumbnails',
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            draggable: false
+        });
+        $('.slider_thumbnails').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            focusOnSelect: true,
+            asNavFor: '.slider_main',
+            responsive: [
+            {
+            breakpoint: 740,
+            settings: {
+                slidesToShow: 3,
+            }
+            }
+        ]
+        });
+    });
+</script> 
+<script>
+    let iframe_background = document.querySelector('.iframe_loader_body');
+    const iframe_button = document.querySelector('.buttons_search');
+    let iframe_apartment_listing = document.querySelector('.apartment_listing');
+    
+
+    // Функция для создания задержки
+    function iframe_delay(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+    
+    // Функция для скачивания файла
+    function saveJsonToFile(filename, data) {
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+
+            URL.revokeObjectURL(url); // Освобождение памяти
+    }
+
+    function fetchAndSaveBuildifyJson(apiKey, page) {
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            'x-api-key': apiKey
+        }
+    };
+
+    // Использование прокси для обхода CORS
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const targetUrl = `https://api.getbuildify.com/v1-lite/on/search_listings?page=${page}&perPage=9`;
+
+    fetch(proxyUrl + targetUrl, options)
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Ошибка при получении данных: ${res.statusText}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log(`Данные для страницы ${page}:`, data);
+            saveJsonToFile(`buildify_json_n${page}.json`, data); // Сохраняем файл
+        })
+        .catch(err => {
+            console.error(`Ошибка при запросе страницы ${page}:`, err);
+        });
+    }
+
+
+
+    async function animation(iframe_check, dispay){
+        if(!iframe_check){
+            dispay.style.opacity = "0";
+            await iframe_delay(500); // Теперь можно использовать await
+            dispay.style.display = "none";
+        }
+        else{
+            dispay.style.display = "flex";
+            await iframe_delay(100);
+            dispay.style.opacity = "1";
+            dispay.style.height = "100%";
+        }
+    }
+
+    iframe_button.addEventListener('click', async (event) => {
+        // Анимация включения
+        animation(true, iframe_background);
+        // Изменение содержимого
+        iframe_apartment_listing.innerHTML = `
+                <div class="iframe_loader_body">
+                    <div class="iframe_loader">
+                        <span class="iframe_bar"></span>
+                        <span class="iframe_bar"></span>
+                        <span class="iframe_bar"></span>
+                    </div>
+                </div>
+        `;
+        iframe_background = document.querySelector('.iframe_loader_body');
+        // Задержка на 5 секунд
+        fetchAndSaveBuildifyJson('AIzaSyCsjNaQbK8B4UbXemvy4MppuqK_0TV95Jc', '0');
+        animation(false, iframe_background);
+    });
+
+</script>
+</html>
